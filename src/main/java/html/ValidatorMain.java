@@ -71,7 +71,7 @@ public class ValidatorMain {
                 System.out.print("Remove what element? ");
                 String element = console.nextLine().trim();
                 validator.removeAll(element);
-            } else if (choice.startsWith("v")) {}
+            } else if (choice.startsWith("v")) {
                 System.out.println(validator.validate());
             } else if (choice.startsWith("q")) {
                 break;
