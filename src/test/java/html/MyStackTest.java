@@ -6,9 +6,15 @@ import org.junit.Test;
 
 public class MyStackTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
+	@Test (expected = IllegalArgumentException.class)
+	public void emptyPop() {
+		MyStack test = new MyStack();
+		test.pop();
 	}
-
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void emptyPeek() {
+		MyStack test = new MyStack();
+		test.peek();
+	}
 }

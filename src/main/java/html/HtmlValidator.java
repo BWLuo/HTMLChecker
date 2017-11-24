@@ -124,7 +124,7 @@ public class HtmlValidator {
 		//check if there are tags that have not been closed 
 		//then prints an Error message with the tags that have not been closed
 		while(!stack.isEmpty()) {
-			textRep += "Error unclosed tag: " + stack.pop().toString() + "\n";
+			textRep += "ERROR unclosed tag: " + stack.pop().toString() + "\n";
 		}
 
 		return textRep;
